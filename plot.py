@@ -27,7 +27,7 @@ st.area_chart(new_df)
 
 st.header("3. Data Visualisation with Plotly")
 st.subheader("3.1 Displaying the dataset")
-df=pd.read_csv("C:/Streamlit/annual4.csv")
+df=pd.read_csv("annual4.csv")
 st.dataframe(df.head())
 
 st.subheader("3.2 Pie Chart")
