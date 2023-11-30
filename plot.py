@@ -15,7 +15,7 @@ st.altair_chart(chart)
 
 st.header("2. Interactive Charts")
 st.subheader("2.1 Line Chart")
-df=pd.read_csv("C:/Streamlit/annual2.csv")
+df=pd.read_csv("annual2.csv")
 col_list=df.columns.tolist()
 col_choices=st.multiselect("choose your columns name ",col_list)
 new_df=df[col_choices]
