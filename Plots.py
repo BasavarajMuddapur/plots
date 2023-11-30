@@ -33,7 +33,7 @@ st.bar_chart(chart_data)
 
 st.header("2.Data Visualization with Matplotlib and Seaborn")
 st.subheader("2.1 Loading the DataFrame : ")
-df=pd.read_csv("C:/Streamlit/annual3.csv")
+df=pd.read_csv("annual3.csv")
 st.dataframe(df)
 
 st.subheader("2.2 Bar Graph with Matplotlib : ")
@@ -54,14 +54,14 @@ col1,col2=st.columns(2)
 with col1:
     col1.header="KDE=False"
     #col1.write("KDE=False")
-    df=pd.read_csv("C:/Streamlit/annual3.csv")
+    df=pd.read_csv("annual3.csv")
     fig1=plt.figure()
     sns.distplot(df["year"],kde=False)
     st.pyplot(fig1)
 with col2:
     col2.header="Hist=False"
     #col2.write("Hist=False")
-    df=pd.read_csv("C:/Streamlit/annual3.csv")
+    df=pd.read_csv("annual3.csv")
     fig2=plt.figure()
     sns.distplot(df["year"],hist=False)
     st.pyplot(fig2)
@@ -70,14 +70,14 @@ with col2:
 st.header("4. Changing Style : ")
 col1,col2=st.columns(2)
 with col1:
-    df=pd.read_csv("C:/Streamlit/annual3.csv")
+    df=pd.read_csv("annual3.csv")
     fig=plt.figure()
     sns.set_style("darkgrid")
     sns.set_context("notebook")
     sns.distplot(df["data_value"],hist=False)
     st.pyplot(fig)
 with col2:
-    df=pd.read_csv("C:/Streamlit/annual3.csv")
+    df=pd.read_csv("annual3.csv")
     fig=plt.figure()
     sns.set_theme(context="poster",style="darkgrid")
     sns.distplot(df["data_value"],hist=False)
